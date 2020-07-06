@@ -21,7 +21,6 @@
 		BCA4D30F249A87E00031C56E /* NotificationListenerTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA4D30E249A87E00031C56E /* NotificationListenerTestUITests.swift */; };
 		BCA4D31D249A97620031C56E /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA4D31C249A97620031C56E /* InitialViewController.swift */; };
 		BCE403A424A7B6F00054E207 /* ArrayHandlerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE403A324A7B6F00054E207 /* ArrayHandlerViewController.swift */; };
-		BCF822B524ABA08600FAEB9C /* TestSelectorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF822B424ABA08600FAEB9C /* TestSelectorViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,7 +61,6 @@
 		BCA4D310249A87E00031C56E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BCA4D31C249A97620031C56E /* InitialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
 		BCE403A324A7B6F00054E207 /* ArrayHandlerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayHandlerViewController.swift; sourceTree = "<group>"; };
-		BCF822B424ABA08600FAEB9C /* TestSelectorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestSelectorViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,7 +150,6 @@
 				BCA2364E249F977300FA118C /* ViewWithAutomatedRemover */,
 				BCA2364F249F97A900FA118C /* ParentChildConflicts */,
 				BCE403A224A7939A0054E207 /* AutomatingThroughArray */,
-				BCF822B324ABA04400FAEB9C /* TestSelector */,
 				BCA4D2F2249A87DE0031C56E /* Main.storyboard */,
 				BCA4D2F5249A87E00031C56E /* Assets.xcassets */,
 				BCA4D2F7249A87E00031C56E /* LaunchScreen.storyboard */,
@@ -187,14 +184,6 @@
 				BCE403A324A7B6F00054E207 /* ArrayHandlerViewController.swift */,
 			);
 			path = AutomatingThroughArray;
-			sourceTree = "<group>";
-		};
-		BCF822B324ABA04400FAEB9C /* TestSelector */ = {
-			isa = PBXGroup;
-			children = (
-				BCF822B424ABA08600FAEB9C /* TestSelectorViewController.swift */,
-			);
-			path = TestSelector;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -336,7 +325,6 @@
 				BCE403A424A7B6F00054E207 /* ArrayHandlerViewController.swift in Sources */,
 				BCA4D2EF249A87DE0031C56E /* SceneDelegate.swift in Sources */,
 				BCA4D31D249A97620031C56E /* InitialViewController.swift in Sources */,
-				BCF822B524ABA08600FAEB9C /* TestSelectorViewController.swift in Sources */,
 				BCA2364B249F971400FA118C /* ChildViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
