@@ -27,19 +27,3 @@ class InitialViewController: UIViewController {
         }
     }
 }
-
-enum Notifications: String, NotificationName {
-    case childViewPresented
-}
-
-protocol NotificationName {
-    var name: Notification.Name { get }
-}
-
-extension RawRepresentable where RawValue == String, Self: NotificationName {
-    var name: Notification.Name {
-        get {
-            return Notification.Name(rawValue: self.rawValue) // We cannot do this in protocol extenison, so pulling it to raw representable.
-        }
-    }
-}

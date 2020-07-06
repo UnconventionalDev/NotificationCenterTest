@@ -63,6 +63,7 @@ class AutoHandlingNotification {
 }
 
 // Base class for ArrayHandlingViewController where notification token registr and unregister happens automatically.
+
 class BaseViewController: UIViewController {
     var notificationList: [AutoHandlingNotification] = []
     

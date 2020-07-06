@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BC0533AA24B3A24B00ADC154 /* CustomNotificationsName.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0533A924B3A24B00ADC154 /* CustomNotificationsName.swift */; };
 		BC0C8F7F249D2DA700F4069A /* NotificationDismisserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0C8F7E249D2DA700F4069A /* NotificationDismisserViewController.swift */; };
 		BCA23647249F393700FA118C /* AutomatedDismisserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA23646249F393700FA118C /* AutomatedDismisserViewController.swift */; };
 		BCA23649249F970700FA118C /* ParentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA23648249F970700FA118C /* ParentViewController.swift */; };
@@ -41,6 +42,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BC0533A924B3A24B00ADC154 /* CustomNotificationsName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNotificationsName.swift; sourceTree = "<group>"; };
 		BC0C8F7E249D2DA700F4069A /* NotificationDismisserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationDismisserViewController.swift; sourceTree = "<group>"; };
 		BCA23646249F393700FA118C /* AutomatedDismisserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutomatedDismisserViewController.swift; sourceTree = "<group>"; };
 		BCA23648249F970700FA118C /* ParentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentViewController.swift; sourceTree = "<group>"; };
@@ -88,6 +90,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BC0533A824B3A19500ADC154 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				BC0533A924B3A24B00ADC154 /* CustomNotificationsName.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
 		BCA2364C249F973100FA118C /* ViewWithoutRemovingObserver */ = {
 			isa = PBXGroup;
 			children = (
@@ -144,6 +154,7 @@
 		BCA4D2EB249A87DE0031C56E /* NotificationListenerTest */ = {
 			isa = PBXGroup;
 			children = (
+				BC0533A824B3A19500ADC154 /* Common */,
 				BCA4D31C249A97620031C56E /* InitialViewController.swift */,
 				BCA2364C249F973100FA118C /* ViewWithoutRemovingObserver */,
 				BCA2364D249F974F00FA118C /* ViewWithObserverRemover */,
@@ -325,6 +336,7 @@
 				BCE403A424A7B6F00054E207 /* ArrayHandlerViewController.swift in Sources */,
 				BCA4D2EF249A87DE0031C56E /* SceneDelegate.swift in Sources */,
 				BCA4D31D249A97620031C56E /* InitialViewController.swift in Sources */,
+				BC0533AA24B3A24B00ADC154 /* CustomNotificationsName.swift in Sources */,
 				BCA2364B249F971400FA118C /* ChildViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
