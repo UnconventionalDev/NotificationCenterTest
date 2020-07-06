@@ -5,11 +5,10 @@ import UIKit
 //This code is just another technique to register and unregister Notification Token automatically through viewWillAppear and viewWillDisappear.
 // Please view logs to observe whats happening.
 
-class ArrayHandlerViewController: BaseViewController {
+class ArrayHandlerViewController: ArrayHandlerBaseViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.addGestureRecognizer(self.endEditingRecognizer())
         addRequiredObservers()
     }
     
@@ -27,12 +26,6 @@ class ArrayHandlerViewController: BaseViewController {
             NotificationKeyboard.shared.keyboardDidHide()
         }
         self.notificationList = [keyboardWillShowAutoNotificaion, keyboardDidShowAutoNotification, keyboardWillHideNotification, keyboardDidHideNotification]
-    }
-    
-    private func endEditingRecognizer() -> UIGestureRecognizer {
-        let tapRecognizer = UITapGestureRecognizer(target: self.view, action: #selector(self.view.endEditing(_:)))
-        tapRecognizer.cancelsTouchesInView = false
-        return tapRecognizer
     }
 }
 
@@ -64,7 +57,7 @@ class AutoHandlingNotification {
 
 // Base class for ArrayHandlingViewController where notification token registr and unregister happens automatically.
 
-class BaseViewController: UIViewController {
+class ArrayHandlerBaseViewController: BaseViewController {
     var notificationList: [AutoHandlingNotification] = []
     
     override func viewWillAppear(_ animated: Bool) {

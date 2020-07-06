@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		BC0533AA24B3A24B00ADC154 /* CustomNotificationsName.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0533A924B3A24B00ADC154 /* CustomNotificationsName.swift */; };
+		BC0533AC24B3A42D00ADC154 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0533AB24B3A42D00ADC154 /* BaseViewController.swift */; };
+		BC0533AE24B3A8A100ADC154 /* KeyboardNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0533AD24B3A8A100ADC154 /* KeyboardNotification.swift */; };
 		BC0C8F7F249D2DA700F4069A /* NotificationDismisserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0C8F7E249D2DA700F4069A /* NotificationDismisserViewController.swift */; };
 		BCA23647249F393700FA118C /* AutomatedDismisserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA23646249F393700FA118C /* AutomatedDismisserViewController.swift */; };
 		BCA23649249F970700FA118C /* ParentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA23648249F970700FA118C /* ParentViewController.swift */; };
@@ -43,6 +45,8 @@
 
 /* Begin PBXFileReference section */
 		BC0533A924B3A24B00ADC154 /* CustomNotificationsName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNotificationsName.swift; sourceTree = "<group>"; };
+		BC0533AB24B3A42D00ADC154 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		BC0533AD24B3A8A100ADC154 /* KeyboardNotification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardNotification.swift; sourceTree = "<group>"; };
 		BC0C8F7E249D2DA700F4069A /* NotificationDismisserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationDismisserViewController.swift; sourceTree = "<group>"; };
 		BCA23646249F393700FA118C /* AutomatedDismisserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutomatedDismisserViewController.swift; sourceTree = "<group>"; };
 		BCA23648249F970700FA118C /* ParentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentViewController.swift; sourceTree = "<group>"; };
@@ -94,6 +98,8 @@
 			isa = PBXGroup;
 			children = (
 				BC0533A924B3A24B00ADC154 /* CustomNotificationsName.swift */,
+				BC0533AB24B3A42D00ADC154 /* BaseViewController.swift */,
+				BC0533AD24B3A8A100ADC154 /* KeyboardNotification.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -330,12 +336,14 @@
 			files = (
 				BCA4D2F1249A87DE0031C56E /* ViewController.swift in Sources */,
 				BCA23647249F393700FA118C /* AutomatedDismisserViewController.swift in Sources */,
+				BC0533AC24B3A42D00ADC154 /* BaseViewController.swift in Sources */,
 				BCA4D2ED249A87DE0031C56E /* AppDelegate.swift in Sources */,
 				BCA23649249F970700FA118C /* ParentViewController.swift in Sources */,
 				BC0C8F7F249D2DA700F4069A /* NotificationDismisserViewController.swift in Sources */,
 				BCE403A424A7B6F00054E207 /* ArrayHandlerViewController.swift in Sources */,
 				BCA4D2EF249A87DE0031C56E /* SceneDelegate.swift in Sources */,
 				BCA4D31D249A97620031C56E /* InitialViewController.swift in Sources */,
+				BC0533AE24B3A8A100ADC154 /* KeyboardNotification.swift in Sources */,
 				BC0533AA24B3A24B00ADC154 /* CustomNotificationsName.swift in Sources */,
 				BCA2364B249F971400FA118C /* ChildViewController.swift in Sources */,
 			);

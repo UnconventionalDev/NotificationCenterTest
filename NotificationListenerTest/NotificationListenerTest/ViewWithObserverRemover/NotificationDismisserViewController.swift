@@ -11,7 +11,7 @@
 
 import UIKit
 
-class NotificationDismisserViewController: UIViewController {
+class NotificationDismisserViewController: BaseViewController {
     
     @IBOutlet weak var didAppearCountLabel: UILabel!
     @IBOutlet weak var willAppearCountLabel: UILabel!
@@ -32,7 +32,6 @@ class NotificationDismisserViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.addGestureRecognizer(self.endEditingRecognizer())
         self.testTextField.delegate = self
     }
     
@@ -53,12 +52,6 @@ class NotificationDismisserViewController: UIViewController {
         var count = Int(willAppearCountLabel.text ?? "0") ?? 0
         count += 1
         willAppearCountLabel.text = String(count)
-    }
-    
-    private func endEditingRecognizer() -> UIGestureRecognizer {
-        let tapRecognizer = UITapGestureRecognizer(target: self.view, action: #selector(self.view.endEditing(_:)))
-        tapRecognizer.cancelsTouchesInView = false
-        return tapRecognizer
     }
     
     deinit {

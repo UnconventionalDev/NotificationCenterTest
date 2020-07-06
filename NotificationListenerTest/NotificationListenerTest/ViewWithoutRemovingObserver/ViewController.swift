@@ -9,7 +9,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: BaseViewController {
     
     @IBOutlet weak var willAppearCountLabel: UILabel!
     @IBOutlet weak var didAppearCountLabel: UILabel!
@@ -17,7 +17,6 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.addGestureRecognizer(self.endEditingRecognizer())
         self.testTextField.delegate = self
     }
     
@@ -51,12 +50,6 @@ class ViewController: UIViewController {
         count += 1
         willAppearCountLabel.text = String(count)
     }
-    
-    private func endEditingRecognizer() -> UIGestureRecognizer {
-        let tapRecognizer = UITapGestureRecognizer(target: self.view, action: #selector(self.view.endEditing(_:)))
-        tapRecognizer.cancelsTouchesInView = false
-        return tapRecognizer
-    }
 }
 
 extension ViewController: UITextFieldDelegate {
@@ -64,34 +57,6 @@ extension ViewController: UITextFieldDelegate {
     func textFieldDidEndEditing(_ textField: UITextField) {
         willAppearCountLabel.text = ""
         didAppearCountLabel.text = ""
-    }
-}
-
-class NotificationKeyboard {
-    static let shared = NotificationKeyboard()
-    
-    func keyboardWillAppear() {
-        print("Shared keyboardWillAppear is called")
-    }
-    
-    func keyboardDidAppear() {
-        print("Shared keyboardDidAppear is called")
-    }
-    
-    func keyboardWillHide() {
-        print("Shared keyboardWillHide is called")
-    }
-    
-    func keyboardDidHide() {
-        print("Shared keyboardDidHide is called")
-    }
-    
-    static func payMoney() {
-        print("your might be paying money for wrong instance")
-    }
-    
-    class func updateMedicine() {
-        print("Might be updating drug for wrong patient.")
     }
 }
 

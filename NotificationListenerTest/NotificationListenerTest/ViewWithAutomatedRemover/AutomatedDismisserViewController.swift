@@ -9,7 +9,7 @@ import UIKit
 // Create a property in your class to store this custom notification token in your class. Each time when the class object where you have stored this customNotification  token gets deinited, the deinit of the customNotification will get triggered and removes the observer.
 // Added advantage for this design is old notificationtoken will be removed while adding new observer.
 
-class AutomatedDismisserViewController: UIViewController {
+class AutomatedDismisserViewController: BaseViewController {
 
     @IBOutlet weak var willAppearCountLAbel: UILabel!
     @IBOutlet weak var testTextField: UITextField!
@@ -17,7 +17,6 @@ class AutomatedDismisserViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.addGestureRecognizer(self.endEditingRecognizer())
         self.testTextField.delegate = self
     }
     
@@ -39,12 +38,6 @@ class AutomatedDismisserViewController: UIViewController {
         var count = Int(willAppearCountLAbel.text ?? "0") ?? 0
         count += 1
         willAppearCountLAbel.text = String(count)
-    }
-    
-    private func endEditingRecognizer() -> UIGestureRecognizer {
-        let tapRecognizer = UITapGestureRecognizer(target: self.view, action: #selector(self.view.endEditing(_:)))
-        tapRecognizer.cancelsTouchesInView = false
-        return tapRecognizer
     }
 }
 
