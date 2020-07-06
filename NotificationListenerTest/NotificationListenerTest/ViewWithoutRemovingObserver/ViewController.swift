@@ -14,7 +14,6 @@ class ViewController: UIViewController {
     @IBOutlet weak var willAppearCountLabel: UILabel!
     @IBOutlet weak var didAppearCountLabel: UILabel!
     @IBOutlet weak var testTextField: UITextField!
-    let customNotificationCenter = NotificationCenter()
     
     override func viewDidLoad() {
         super.viewDidLoad()

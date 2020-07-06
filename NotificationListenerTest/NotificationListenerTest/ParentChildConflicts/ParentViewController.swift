@@ -19,6 +19,7 @@ class ParentViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        NotificationCenter.default.post(name: Notifications.childViewPresented.name, object: nil, userInfo: ["kClassName": String(describing: self)])
         NotificationCenter.default.addObserver(forName: UIResponder.keyboardWillShowNotification, object: nil, queue: nil) { [weak self] _ in
             self?.keyboardWillAppear()
         }

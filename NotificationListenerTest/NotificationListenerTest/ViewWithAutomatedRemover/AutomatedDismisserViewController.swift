@@ -23,6 +23,7 @@ class AutomatedDismisserViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        NotificationCenter.default.post(name: Notifications.childViewPresented.name, object: nil, userInfo: ["kClassName": String(describing: self)])
         willAppearCountLAbel.text = ""
     }
     

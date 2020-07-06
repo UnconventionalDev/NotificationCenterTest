@@ -69,6 +69,7 @@ class BaseViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         for notification in notificationList { notification.register() }
+        NotificationCenter.default.post(name: Notifications.childViewPresented.name, object: nil, userInfo: ["kClassName": String(describing: self)])
     }
     
     override func viewWillDisappear(_ animated: Bool) {
