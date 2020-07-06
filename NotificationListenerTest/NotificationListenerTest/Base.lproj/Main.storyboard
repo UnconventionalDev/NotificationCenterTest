@@ -87,34 +87,20 @@
                                     <segue destination="87b-6A-dHf" kind="show" id="hfg-C6-RGH"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fko-pD-6wa">
-                                <rect key="frame" x="16" y="684" width="382" height="100"/>
-                                <color key="backgroundColor" red="0.93814766839378239" green="0.93690939465898382" blue="0.91801350457026587" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="1hv-SI-dua"/>
-                                </constraints>
-                                <state key="normal" title="Test Selector"/>
-                                <connections>
-                                    <segue destination="msD-Ue-vKr" kind="show" id="gMT-qn-Hi0"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="ALO-9B-jXH" firstAttribute="top" secondItem="ZeY-Nn-gMN" secondAttribute="bottom" constant="16" id="5jc-oG-qTH"/>
                             <constraint firstItem="nfF-0G-3D7" firstAttribute="trailing" secondItem="hBa-f9-awF" secondAttribute="trailing" constant="16" id="BDc-g3-jjp"/>
                             <constraint firstItem="hBa-f9-awF" firstAttribute="top" secondItem="nfF-0G-3D7" secondAttribute="top" constant="16" id="Eg2-5b-f14"/>
-                            <constraint firstItem="fko-pD-6wa" firstAttribute="leading" secondItem="nfF-0G-3D7" secondAttribute="leading" constant="16" id="Hoi-Sr-4Bf"/>
                             <constraint firstItem="x1K-Vr-LSb" firstAttribute="top" secondItem="veA-y6-Kf8" secondAttribute="bottom" constant="16" id="IHo-Sz-bs5"/>
                             <constraint firstItem="nfF-0G-3D7" firstAttribute="trailing" secondItem="ALO-9B-jXH" secondAttribute="trailing" constant="16" id="J03-Ul-5Vv"/>
                             <constraint firstItem="ZeY-Nn-gMN" firstAttribute="leading" secondItem="nfF-0G-3D7" secondAttribute="leading" constant="16" id="JBA-1O-9OH"/>
                             <constraint firstItem="veA-y6-Kf8" firstAttribute="leading" secondItem="nfF-0G-3D7" secondAttribute="leading" constant="16" id="JF7-bf-pTP"/>
                             <constraint firstItem="hBa-f9-awF" firstAttribute="leading" secondItem="nfF-0G-3D7" secondAttribute="leading" constant="16" id="JsF-5d-Bqa"/>
-                            <constraint firstItem="fko-pD-6wa" firstAttribute="top" secondItem="x1K-Vr-LSb" secondAttribute="bottom" constant="16" id="XqR-5T-Wzl"/>
                             <constraint firstItem="x1K-Vr-LSb" firstAttribute="leading" secondItem="nfF-0G-3D7" secondAttribute="leading" constant="16" id="a2z-cI-B0s"/>
                             <constraint firstItem="nfF-0G-3D7" firstAttribute="trailing" secondItem="x1K-Vr-LSb" secondAttribute="trailing" constant="16" id="f3Y-Rw-eWQ"/>
                             <constraint firstItem="nfF-0G-3D7" firstAttribute="trailing" secondItem="ZeY-Nn-gMN" secondAttribute="trailing" constant="16" id="k84-qF-eCZ"/>
-                            <constraint firstItem="nfF-0G-3D7" firstAttribute="trailing" secondItem="fko-pD-6wa" secondAttribute="trailing" constant="16" id="nqZ-BS-zcr"/>
                             <constraint firstItem="veA-y6-Kf8" firstAttribute="top" secondItem="ALO-9B-jXH" secondAttribute="bottom" constant="16" id="oTK-Ic-o6d"/>
                             <constraint firstItem="nfF-0G-3D7" firstAttribute="trailing" secondItem="veA-y6-Kf8" secondAttribute="trailing" constant="16" id="v6Y-6X-uqH"/>
                             <constraint firstItem="ZeY-Nn-gMN" firstAttribute="top" secondItem="hBa-f9-awF" secondAttribute="bottom" constant="16" id="vsm-3j-5Gv"/>
@@ -461,34 +447,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-193" y="-601"/>
-        </scene>
-        <!--Test Selector View Controller-->
-        <scene sceneID="ROf-z4-T0M">
-            <objects>
-                <viewController id="msD-Ue-vKr" customClass="TestSelectorViewController" customModule="NotificationListenerTest" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="t4A-hw-DA8">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cKm-7K-3zs">
-                                <rect key="frame" x="16" y="185" width="382" height="34"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                        </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <constraints>
-                            <constraint firstItem="xLy-r6-hEP" firstAttribute="trailing" secondItem="cKm-7K-3zs" secondAttribute="trailing" constant="16" id="1iO-rx-rhz"/>
-                            <constraint firstItem="cKm-7K-3zs" firstAttribute="leading" secondItem="xLy-r6-hEP" secondAttribute="leading" constant="16" id="Ic8-Wb-w7p"/>
-                            <constraint firstItem="cKm-7K-3zs" firstAttribute="top" secondItem="xLy-r6-hEP" secondAttribute="top" constant="97" id="f32-C2-SxS"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="xLy-r6-hEP"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="SsX-dl-73D"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ZQ5-qy-1am" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-771" y="872"/>
         </scene>
         <!--Array Handler View Controller-->
         <scene sceneID="0Fr-kI-9RR">
